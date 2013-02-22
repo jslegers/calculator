@@ -1,0 +1,11 @@
+body {background-color: #CCCCCC; color: #555555; font-family: Arial; font-weight: bold; font-size: 8pt;}
+A {color: #CC5555; text-decoration: none}
+A:visited {color: #CC5555; text-decoration: none}
+A:active {color: #FF0000; text-decoration: none}
+A:hover {color: #FF0000; text-decoration: none}
+.button {height: 30px; width: 40px; background-color: #555555; border-color: #555555; color:#FFFFFF;}
+.invisbutton {height: 28px; width: 40px; background-color: #7555C6; border-color: #7555C6; border-style:solid;}
+.display {height: 50px; width: 217px; background-color: #D6D39F; border-color: #000000; color:#222222; border-style: solid; text-align: right; font-size: 22pt;}
+.redbutton {height: 30px; width: 40px; background-color: #EE0000; border-color: #EE0000; color:#FFFFFF;}
+.yellowbutton {height: 30px; width: 40px; background-color: #EEEE00; border-color: #EEEE00; color:#000000;}
+.machien {height: 30px; width: 40px; background-color: #7555C6; border-color: #7555C6; border-style:ridge;}

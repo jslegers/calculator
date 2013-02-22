@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.min.css" />
+    </head>
+    <body>
+        <br><br>
+        <div align="center">
+            <table class="machien" cellspacing="20" cellpadding="0">
+                <tr>
+                    <td align="center">
+                        <form name="rekenmachien">
+                            <table>
+                                <tr>
+                                    <td colspan="5"><input type="text" name="display" class="display" readonly='readonly'></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5"><input type="text" class="invisbutton" style="height:15px;" readonly='readonly'></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="hidden" class="invisbutton" readonly='readonly'></td>
+                                    <td><input type="text" name="hidden2" class="invisbutton" readonly='readonly'></td>
+                                    <td><input type="button" name="off" class="redbutton" value="off" onclick="zet(this.name);"></td>
+                                    <td><input type="button" name="ce" class="yellowbutton" value="ce" onclick="zet(this.name);"></td>
+                                    <td><input type="button" name="onc" class="yellowbutton" value="on/c" onclick="zet(this.name);"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" name="number7" class="button" value="7" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number8" class="button" value="8" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number9" class="button" value="9" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="procent" class="button" value="%" onclick="uitkomst(this.name);"></td>
+                                    <td><input type="button" name="plusmin" class="button" value="+/-" onclick="negatief();"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" name="number4" class="button" value="4" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number5" class="button" value="5" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number6" class="button" value="6" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="functie-" class="button" value="-" onclick="functie(this.name.substring(7,8));"></td>
+                                    <td><input type="button" name="functie/" class="button" value="/" onclick="functie(this.name.substring(7,8));"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" name="number1" class="button" value="1" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number2" class="button" value="2" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number3" class="button" value="3" onclick="number(this.value);"></td>
+                                    <td rowspan="2"><input type="button" name="functie+" class="button" value="+" style="height: 64px" onclick="functie(this.name.substring(7,8));"></td>
+                                    <td><input type="button" name="functie*" class="button" value="x" onclick="functie(this.name.substring(7,8));"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" name="number0" class="button" value="0" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="number00" class="button" value="00" onclick="number(this.value);"></td>
+                                    <td><input type="button" name="dot" class="button" value="." onclick="punt();"></td>
+                                    <td><input type="button" name="isgelijkaan" class="button" value="=" onclick="uitkomst(this.name);"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br>Calculator made by John Slegers</a>
+        </div>
+        <script src="code.min.js"></script>
+    </body>
+</html>
